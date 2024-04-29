@@ -128,7 +128,7 @@ async function run() {
   const result = await cartCollection.insertOne(cart);
   res.send(result);
 });
-   // Get all
+   // Get Cart Bookigs for a specific user who is currently logged in
    app.get("/cart", async (req, res) => {
     const email = req.query.email;
     const query = { cartAdderEmail: email };
