@@ -95,6 +95,7 @@ async function run() {
       console.log(result);
       res.send(result);
     });
+    // Update from spot 
     app.patch("/updateS/:id", async (req, res) => {
       try {
         const id = req.params.id;
