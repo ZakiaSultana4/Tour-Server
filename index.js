@@ -64,7 +64,7 @@ async function run() {
         console.log(err.message);
       }
     });
-    // Get a
+    // Get a single spot
     app.get("/spotS/:id", async (req, res) => {
       try {
         const id = req.params.id;
