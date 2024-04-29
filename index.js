@@ -27,7 +27,7 @@ async function run() {
     const spotCollection = database.collection("spot");
     const cartCollection = database.collection("cart");
 
-    // Get all memories
+    // Get all Country
     app.get("/Country", async (req, res) => {
       const result = await CountryCollection.find().toArray();
       res.send(result);
