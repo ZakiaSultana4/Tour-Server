@@ -32,7 +32,7 @@ async function run() {
       const result = await CountryCollection.find().toArray();
       res.send(result);
     });
-    // Get all
+    // Get spot for a specific country
     app.get("/Spot/:Cname", async (req, res) => {
       const Name = req.params.Cname;
       const query = {   country: Name };
