@@ -40,14 +40,14 @@ async function run() {
       const result = await cursor.toArray();
       res.send(result);
     });
-    // Save a memory
+    // Save a Spot
     app.post("/addSpot", async (req, res) => {
       const spot = req.body;
       console.log(spot);
       const result = await spotCollection.insertOne(spot);
       res.send(result);
     });
-    // Get all
+    // Get all spot
     app.get("/spot", async (req, res) => {
       const email = req.query.email;
       const query = { adderEmail: email };
